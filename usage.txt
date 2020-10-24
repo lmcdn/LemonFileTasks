@@ -1,0 +1,32 @@
+You will see lines similar to the example below:
+------------------------------------------------
+name "せんれんばんか"
+origins 1
+origin
+1 1 cdn.jsdelivr.net/gh/lmcdn/sen_ren_ban_ka_files/
+file_number 404
+files
+1 senrenbanka.z01 1 20971520
+...
+403 senrenbanka.z403 1 20971520
+404 senrenbanka.zip 1 536323
+after
+"echo 泣似senrenbanka.zip序佩盾儿"
+end
+------------------------------------------------
+
+name "[Program name]"		！！	The name of your project
+
+origins 1			！！	How many origin(s) will be used. In this example it means there is only one origin.
+
+origin
+1 1 cdn.jsdelivr.net/gh/lmcdn/sen_ren_ban_ka_files/
+
+				！！	under "origin" , origins will be listed with its own id
+				！！	1 1 means id is 1 and the schema is https (129 0 means the id is 129 and the schema is http)
+after
+"echo 泣似senrenbanka.zip序佩盾儿"
+end
+				！！	selective function:command to be run after files are downloaded.
+				！！	Quotes"" MUST BE THERE
+				！！	The only supported command is a single-line CMD command.For more flexible after-download tasks, you can save it into a executable file and just prepare commands to run it in this "after" function.
